@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Radixion for industrial and electrical hardware solutions. Get quotes, technical support, and expert consultation. Call +91 98765 43210 or WhatsApp us.">
+    <meta name="keywords" content="contact radixion, hardware supplier contact, industrial hardware quote, electrical components inquiry">
+    <title>Contact Us - Radixion | Get Quote & Expert Consultation</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header sticky-header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>RADIXION</h1>
+                    <span class="tagline">Powering Progress with Precision Hardware</span>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-contact">
+                    <div class="phone-number">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9548426821</span>
+                    </div>
+                    <button class="cta-btn" onclick="getQuote()">Get Quote</button>
+                </div>
+                
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our experts for all your hardware needs</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Contact</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to discuss your hardware requirements? Our team of experts is here to help you find the perfect solutions for your projects.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <p>+91 95484 26821</p>
+                                <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                            </div>
+                            <button class="btn btn-call" onclick="callNow()">Call Now</button>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>+91 95484 26821</p>
+                                <span>Quick response guaranteed</span>
+                            </div>
+                            <a href="https://wa.me/919548426821" class="btn btn-whatsapp" target="_blank">WhatsApp</a>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>Radixion9@gmail.com</p>
+                                <span>We'll respond within 24 hours</span>
+                            </div>
+                            <button class="btn btn-secondary" onclick="sendEmail()">Send Email</button>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Visit Us</h4>
+                                <p>North India</p>
+                                <span>Multiple locations available</span>
+                            </div>
+                            <button class="btn btn-secondary" onclick="showLocation()">View Location</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Forms -->
+                <div class="contact-forms-section">
+                    <div class="form-tabs">
+                        <button class="tab-btn active" onclick="showForm('inquiry')">General Inquiry</button>
+                        <button class="tab-btn" onclick="showForm('quote')">Get Quote</button>
+                        <button class="tab-btn" onclick="showForm('support')">Technical Support</button>
+                    </div>
+
+                    <!-- General Inquiry Form -->
+                    <div id="inquiry-form" class="contact-form active">
+                        <h3>General Inquiry</h3>
+                        <form data-form-type="inquiry">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="inquiry-name">Full Name *</label>
+                                    <input type="text" id="inquiry-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inquiry-company">Company Name</label>
+                                    <input type="text" id="inquiry-company" name="company">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="inquiry-email">Email Address *</label>
+                                    <input type="email" id="inquiry-email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inquiry-phone">Phone Number *</label>
+                                    <input type="tel" id="inquiry-phone" name="phone" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inquiry-subject">Subject *</label>
+                                <select id="inquiry-subject" name="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="product-inquiry">Product Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="bulk-order">Bulk Order</option>
+                                    <option value="technical-query">Technical Query</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inquiry-message">Message *</label>
+                                <textarea id="inquiry-message" name="message" rows="5" placeholder="Please describe your requirements or inquiry..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+
+                    <!-- Quote Request Form -->
+                    <div id="quote-form" class="contact-form">
+                        <h3>Request Quote</h3>
+                        <form data-form-type="quote">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quote-name">Full Name *</label>
+                                    <input type="text" id="quote-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="quote-company">Company Name *</label>
+                                    <input type="text" id="quote-company" name="company" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quote-email">Email Address *</label>
+                                    <input type="email" id="quote-email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="quote-phone">Phone Number *</label>
+                                    <input type="tel" id="quote-phone" name="phone" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quote-category">Product Category *</label>
+                                    <select id="quote-category" name="category" required>
+                                        <option value="">Select Category</option>
+                                        <option value="flood-lights">Flood Lights</option>
+                                        <option value="high-mast-lights">High Mast Lights</option>
+                                        <option value="gi-poles">GI Poles</option>
+                                        <option value="wires-cables">Wires & Cables</option>
+                                        <option value="changeovers-switches">Changeovers & Switches</option>
+                                        <option value="monoblock-pumps">Monoblock Pumps</option>
+                                        <option value="mcbs-boxes">MCBs & MCB Boxes</option>
+                                        <option value="condensers">Condensers</option>
+                                        <option value="multiple">Multiple Categories</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="quote-quantity">Estimated Quantity</label>
+                                    <input type="text" id="quote-quantity" name="quantity" placeholder="e.g., 100 units">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quote-location">Project Location</label>
+                                <input type="text" id="quote-location" name="location" placeholder="City, State">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quote-requirements">Detailed Requirements *</label>
+                                <textarea id="quote-requirements" name="requirements" rows="5" placeholder="Please provide detailed specifications, quantities, delivery timeline, and any special requirements..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quote-timeline">Required Timeline</label>
+                                <select id="quote-timeline" name="timeline">
+                                    <option value="">Select Timeline</option>
+                                    <option value="urgent">Urgent (Within 1 week)</option>
+                                    <option value="1-2-weeks">1-2 Weeks</option>
+                                    <option value="1-month">Within 1 Month</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Request Quote</button>
+                        </form>
+                    </div>
+
+                    <!-- Technical Support Form -->
+                    <div id="support-form" class="contact-form">
+                        <h3>Technical Support</h3>
+                        <form data-form-type="support">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="support-name">Full Name *</label>
+                                    <input type="text" id="support-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="support-company">Company Name</label>
+                                    <input type="text" id="support-company" name="company">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="support-email">Email Address *</label>
+                                    <input type="email" id="support-email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="support-phone">Phone Number *</label>
+                                    <input type="tel" id="support-phone" name="phone" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="support-product">Product/Service *</label>
+                                    <input type="text" id="support-product" name="product" placeholder="Product name or model" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="support-priority">Priority Level</label>
+                                    <select id="support-priority" name="priority">
+                                        <option value="low">Low</option>
+                                        <option value="medium" selected>Medium</option>
+                                        <option value="high">High</option>
+                                        <option value="urgent">Urgent</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="support-issue">Issue Description *</label>
+                                <textarea id="support-issue" name="issue" rows="5" placeholder="Please describe the technical issue or question in detail..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="support-steps">Steps Taken</label>
+                                <textarea id="support-steps" name="steps" rows="3" placeholder="What troubleshooting steps have you already tried?"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit Support Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Location</h2>
+                <p>Find us across North India for your convenience</p>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Interactive Map</h3>
+                    <p>North India Coverage</p>
+                    <p>Multiple service locations available</p>
+                    <button class="btn btn-primary" onclick="openGoogleMaps()">View on Google Maps</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="business-hours">
+        <div class="container">
+            <div class="hours-content">
+                <div class="hours-info">
+                    <h3>Business Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">9:00 AM - 4:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="emergency-contact">
+                    <h3>Emergency Support</h3>
+                    <p>For urgent technical support or emergency orders:</p>
+                    <div class="emergency-buttons">
+                        <a href="tel:+919876543210" class="btn btn-call">
+                            <i class="fas fa-phone"></i> Emergency Call
+                        </a>
+                        <a href="https://wa.me/919876543210?text=Emergency%20Support%20Required" class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Emergency WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>RADIXION</h3>
+                        <p>Powering Progress with Precision Hardware</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html#flood-lights">Flood Lights</a></li>
+                        <li><a href="products.html#high-mast">High Mast Lights</a></li>
+                        <li><a href="products.html#gi-poles">GI Poles</a></li>
+                        <li><a href="products.html#wires-cables">Wires & Cables</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 95484 26821</p>
+                        <p><i class="fas fa-envelope"></i> Radixion9@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> North India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Radixion. All rights reserved. | Designed for Industrial Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919548426821" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Form tab switching
+        function showForm(formType) {
+            // Hide all forms
+            document.querySelectorAll('.contact-form').forEach(form => {
+                form.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected form
+            document.getElementById(formType + '-form').classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+        
+        // Google Maps integration
+        function openGoogleMaps() {
+            window.open('https://maps.google.com/maps?q=North+India', '_blank');
+        }
+        
+        // Show location function
+        function showLocation() {
+            openGoogleMaps();
+        }
+    </script>
+</body>
+</html>
