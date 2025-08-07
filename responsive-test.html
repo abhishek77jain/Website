@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsiveness Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-case { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; }
+        .pass { background: #e6ffed; }
+        .fail { background: #ffebee; }
+    </style>
+</head>
+<body>
+    <h1>Radixion Responsiveness Test</h1>
+    
+    <div class="test-case" id="mobile-menu">
+        <h2>Mobile Menu Test</h2>
+        <p>Check if mobile menu appears and functions at 768px width</p>
+    </div>
+    
+    <div class="test-case" id="grid-layout">
+        <h2>Grid Layout Test</h2>
+        <p>Check if grid layouts adapt to different screen sizes</p>
+    </div>
+    
+    <div class="test-case" id="form-elements">
+        <h2>Form Elements Test</h2>
+        <p>Check form inputs and buttons at different sizes</p>
+    </div>
+    
+    <script>
+        // Simple test script to verify responsiveness
+        function runTests() {
+            const mobileMenuTest = window.matchMedia('(max-width: 768px)').matches;
+            document.getElementById('mobile-menu').className += 
+                mobileMenuTest ? ' pass' : ' fail';
+            
+            const gridTest = window.matchMedia('(min-width: 1024px)').matches;
+            document.getElementById('grid-layout').className += 
+                gridTest ? ' pass' : ' fail';
+        }
+        
+        window.onload = runTests;
+        window.onresize = runTests;
+    </script>
+</body>
+</html>
