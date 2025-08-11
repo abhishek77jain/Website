@@ -26,13 +26,16 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <h1>RADIXION</h1>
-                    <span class="tagline">Powering Progress with Precision Hardware</span>
+                    <img src="logo.jpg" alt="Radixion Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>RADIXION</h1>
+                        <span class="tagline">Powering Progress with Precision Hardware</span>
+                    </div>
                 </div>
                 
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
                         <li><a href="about.html" class="nav-link">About Us</a></li>
                         <li><a href="products.html" class="nav-link">Products</a></li>
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -43,15 +46,34 @@
                 <div class="header-contact">
                     <div class="phone-number">
                         <i class="fas fa-phone"></i>
-                        <span>+91 9548426821</span>
+                        <span>+91 80777 46988</span>
                     </div>
-                    <button class="cta-btn">Get Quote</button>
+                    <button class="cta-btn" onclick="getQuote()">Get Quote</button>
                 </div>
                 
-                <div class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
                     <span></span>
                     <span></span>
                     <span></span>
+                </button>
+                
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav">
+                    <nav class="mobile-menu">
+                        <ul class="mobile-nav-list">
+                            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                            <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+                            <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+                            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                            <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+                        </ul>
+                        <div class="mobile-contact">
+                            <a href="tel:+918077746988" class="mobile-phone">
+                                <i class="fas fa-phone"></i> +91 8077746988
+                            </a>
+                            <a href="contact.html" class="mobile-cta">Get Quote</a>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -70,7 +92,7 @@
                 <div class="hero-buttons">
                     <a href="products.html" class="btn btn-primary">View Products</a>
                     <a href="contact.html" class="btn btn-secondary">Get Quote</a>
-                    <a href="tel:+919548426821" class="btn btn-call">
+                    <a href="tel:+918077746988" class="btn btn-call">
                         <i class="fas fa-phone"></i> Call Now
                     </a>
                 </div>
@@ -194,7 +216,7 @@
                 <p>Get in touch with our experts for customized hardware solutions</p>
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                    <a href="https://wa.me/919548426821" class="btn btn-whatsapp" target="_blank">
+                    <a href="https://wa.me/918077746988" class="btn btn-whatsapp" target="_blank">
                         <i class="fab fa-whatsapp"></i> WhatsApp Us
                     </a>
                 </div>
@@ -215,7 +237,7 @@
                         <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/light.manufactureagra/" class="social-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 
@@ -242,9 +264,9 @@
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +91 95484 26821</p>
+                        <p><i class="fas fa-phone"></i> +91 80777 46988</p>
                         <p><i class="fas fa-envelope"></i> Radixion9@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> North India</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Agra, UP</p>
                     </div>
                 </div>
             </div>
@@ -257,7 +279,7 @@
 
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/919548426821" target="_blank" class="whatsapp-btn">
+        <a href="https://wa.me/918077746988" target="_blank" class="whatsapp-btn">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
@@ -265,5 +287,4 @@
     <!-- JavaScript -->
     <script src="js/script.js"></script>
 </body>
-
 </html>
